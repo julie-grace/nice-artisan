@@ -134,7 +134,6 @@ class NiceArtisanController extends AppController
     public function show($option = null)
     {
         $options = array_keys(config('commands.commands'));
-        array_push($options, 'customs');
 
         if (is_null($option)) {
             $option = array_values($options)[0];
